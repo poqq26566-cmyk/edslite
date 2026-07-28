@@ -28,9 +28,7 @@ public class DrawerController extends DrawerControllerBase
         if(!isSelectAction)
         {
             adapter.add(new DrawerSettingsMenuItem(this));
-            adapter.add(new DrawerHelpMenuItem(this));
             adapter.add(new DrawerAboutMenuItem(this));
-            adapter.add(new DrawerExitMenuItem(this));
         }
         getDrawerListView().setAdapter(adapter);
         return list;
