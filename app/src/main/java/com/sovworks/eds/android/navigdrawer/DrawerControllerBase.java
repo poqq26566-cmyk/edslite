@@ -200,9 +200,7 @@ public abstract class DrawerControllerBase
         if(!isSelectAction)
         {
             adapter.add(new DrawerSettingsMenuItem(this));
-            adapter.add(new DrawerHelpMenuItem(this));
             adapter.add(new DrawerAboutMenuItem(this));
-            adapter.add(new DrawerExitMenuItem(this));
         }
         _drawerListView.setAdapter(adapter);
         return list;
